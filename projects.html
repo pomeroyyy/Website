@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự án - Portfolio của tôi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .projects-section {
+      min-height: 100vh;
+      padding: 80px 40px;
+      background: linear-gradient(135deg, #ff7043, #ff9800);
+      color: white;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .project-info p {
+      font-size: 0.95em;
+      color: #fbe9e7;
+      margin-bottom: 15px;
+    }
+
+    .project-info a {
+      display: inline-block;
+      text-decoration: none;
+      background: #fff;
+      color: #e65100;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .project-info a:hover {
+      background: #e65100;
+      color: #fff;
+    }
+
+    footer {
+      background-color: #b84a1a;
+      text-align: center;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">MyPortfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="skills.html">Kỹ năng</a></li>
+        <li><a href="projects.html" class="active">Dự án</a></li>
+        <li><a href="achievements.html">Thành tích</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2>Các Dự Án Tiêu Biểu</h2>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Website Portfolio</h3>
+          <p>Trang web portfolio thể hiện kỹ năng HTML, CSS và sự sáng tạo của bản thân.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Website giới thiệu địa điểm du lịch</h3>
+          <p>Dự án nhỏ dùng các kỹ năng HTML và CSS để giúp đỡ quảng bá cho khu du lịch</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Trang web đánh giá các thiết bị điện tử</h3>
+          <p>Nêu ra đánh giá của bản thân để giúp mọi người có cái nhìn tổng quan về món đồ họ quan tâm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Thiết kế bởi Nhật Quang</p>
+  </footer>
+</body>
+</html>

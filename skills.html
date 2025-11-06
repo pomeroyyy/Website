@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng - Portfolio của tôi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .skills-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #ff7043, #ff9800);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .skills-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .skill-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .skill-card h3 {
+      margin: 10px 0;
+      font-size: 1.4em;
+    }
+
+    .progress-bar {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      height: 12px;
+      width: 100%;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: #fff;
+      border-radius: 20px;
+    }
+
+    footer {
+      background-color: #b84a1a;
+      text-align: center;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">MyPortfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="skills.html" class="active">Kỹ năng</a></li>
+        <li><a href="projects.html">Dự án</a></li>
+        <li><a href="achievements.html">Thành tích</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h2>Kỹ năng của tôi</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <p>Khả năng sử dụng thuần thục ở 1 mức độ nhất định.</p>
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>Python</h3>
+        <p>Tạo ra những trang web với những đặc điểm khác biệt.</p>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+        <h3>Adobe Photoshop CC</h3>
+        <p>Có khả năng chỉnh sửa và cắt ghép 1 cách điêu luyện.</p>
+        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Thiết kế bởi Nhật Quang</p>
+  </footer>
+</body>
+</html>
